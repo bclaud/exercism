@@ -13,7 +13,7 @@
         inherit (nixpkgs.lib) optional;
         pkgs = import nixpkgs {
           inherit system;
-          overlays = [devshell-flake.overlay];
+          # overlays = [devshell-flake.overlay];
         };
       in
 

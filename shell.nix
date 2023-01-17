@@ -5,7 +5,7 @@ with pkgs;
 let
   projectName = "execism";
 
-  exercismPython = python311.withPackages (p: with p; [pytest pytest-cache pytest-subtests pytest-pylint]);
+  exercismPython = python3.withPackages (p: with p; [pytest pytest-cache pytest-subtests pytest-pylint]);
 in
 
 mkShell {

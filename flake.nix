@@ -18,6 +18,6 @@
       in
 
       with pkgs;
-      { devShell = callPackage ./shell.nix { inherit devshell-flake; }; }
+      { devShell = callPackage ./shell.nix { }; }
     );
 }

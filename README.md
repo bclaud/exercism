@@ -11,6 +11,8 @@ mkdir -p ~/.config/nix
 ```sh
 echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf 
 ```
+
+Restart your computer or only the nix-deamon
   
 3 - Install direnv using Nix.
   ```sh
@@ -34,7 +36,7 @@ eval "$(direnv hook zsh)"
 \# ~/.config/config.fish
 direnv hook fish | source
 ```
-
+Close then open your terminal.
 
 ## Setup your token
 

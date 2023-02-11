@@ -1,40 +1,50 @@
 ## Dependencies
 
-1- Install Nix. Works on Linux, macOS and WSL. www.nix.org
-2- Enable nix-flake. Handy commands to do so.
-  - ``sh
-  mkdir -p ~/.config/nix
-  echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf 
-  ``
-3- Install direnv using Nix.
-  ``sh
+1 - Install Nix. Works on Linux, macOS and WSL. www.nixos.org
+
+2 - Enable nix-flake. Handy commands to do so.
+
+```sh  
+mkdir -p ~/.config/nix
+```
+
+```sh
+echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf 
+```
+
+Restart your computer or only the nix-deamon
+  
+3 - Install direnv using Nix.
+  ```sh
   nix profile install nixpkgs#direnv
-  ``
-4- Add direnv hook. If you don't know your current shell, type
-``sh
+  ```
+  
+4 - Add direnv hook. If you don't know your current shell, type
+```sh
 echo $SHELL
-``
+```
+
 add accordingly to your shell
 
-``sh
-# ~/.bashrc
+```sh
+\# ~/.bashrc
 eval "$(direnv hook bash)"
 
-# ~/.zshrc
+\# ~/.zshrc
 eval "$(direnv hook zsh)"
 
-# ~/.config/config.fish
+\# ~/.config/config.fish
 direnv hook fish | source
-``
-
+```
+Close then open your terminal.
 
 ## Setup your token
 
 Get your token at https://exercism.org/settings/api_cli
 
-``sh
+```sh
 echo "EXERCISM_TOKEN=your_token"
-``
+```
 
 Send ``direnv allow`` in your terminal while inside project folder.
 

@@ -1,4 +1,10 @@
-## Dependencies
+# Supported languages, with all Exercism requirements
+
+- Elixir
+- Python
+- F# (I think every DotNET language too)
+
+# Dependencies
 
 1 - Install Nix. Works on Linux, macOS and WSL. www.nixos.org
 
@@ -38,7 +44,7 @@ direnv hook fish | source
 ```
 Close then open your terminal.
 
-## Setup your token
+# Setup your token
 
 Get your token at https://exercism.org/settings/api_cli
 
@@ -49,3 +55,13 @@ echo "EXERCISM_TOKEN=your_token"
 Send ``direnv allow`` in your terminal while inside project folder.
 
 Done, all dependencies will be fetched, built and then cached, as well as your Exercism.
+
+# Want more supported languages?
+Just open an Issue or PR :)
+
+# TODO
+- Provide a template derivation
+- Improve READme. I know it's quite lame atm
+- Lazy evaluation of the languages?
+- An editor with extensions installed?
+

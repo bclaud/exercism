@@ -7,7 +7,7 @@ let
 
   exercismPython = python3.withPackages (p: with p; [pytest pytest-cache pytest-subtests pytest-pylint]);
 
-  fSharp = [exercism dotnet-sdk_7 dotnet-runtime_7];
+  fSharp = [ dotnet-sdk_7 dotnet-runtime_7];
 in
 
 mkShell {

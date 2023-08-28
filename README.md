@@ -3,6 +3,8 @@
 - Elixir
 - Python
 - F# (I think every DotNET language too)
+- Ballerina
+- Kotlin
 
 # Dependencies
 

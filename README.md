@@ -49,7 +49,7 @@ Close then open your terminal.
 Get your token at https://exercism.org/settings/api_cli
 
 ```sh
-echo "EXERCISM_TOKEN=your_token"
+echo "EXERCISM_TOKEN=your_token" >> .env
 ```
 
 Send ``direnv allow`` in your terminal while inside project folder.

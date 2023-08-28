@@ -4,14 +4,13 @@
   inputs = {
     nixpkgs = {url = "github:NixOS/nixpkgs/nixpkgs-unstable";};
     flake-utils = {url = "github:numtide/flake-utils";};
-    devshell-flake = {url = "github:numtide/devshell";};
   };
 
   outputs = {
     self,
     nixpkgs,
     flake-utils,
-    devshell-flake,
+    ...
   }:
     flake-utils.lib.eachDefaultSystem (
       system: let
@@ -21,6 +20,6 @@
           # overlays = [devshell-flake.overlay];
         };
       in
-        with pkgs; rec {devShell = callPackage ./shell.nix { };}
+        with pkgs; {devShell = callPackage ./shell.nix { };}
     );
 }

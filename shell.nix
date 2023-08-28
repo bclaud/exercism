@@ -3,7 +3,7 @@
 with pkgs;
 
 let
-  projectName = "execism";
+  projectName = "exercism";
 
   exercismPython = python3.withPackages (p: with p; [pytest pytest-cache pytest-subtests pytest-pylint]);
 
@@ -19,6 +19,9 @@ mkShell {
     exercism
     exercismPython
     fSharp
+    ballerina
+    kotlin
+    jdk
   ];
 
   LOCALE_ARCHIVE = if pkgs.stdenv.isLinux then "${pkgs.glibcLocalesUtf8}/lib/locale/locale-archive" else ""; 

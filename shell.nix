@@ -21,8 +21,12 @@ mkShell {
     fSharp
     ballerina
     kotlin
-    jdk
+    gradle
   ];
 
   LOCALE_ARCHIVE = if pkgs.stdenv.isLinux then "${pkgs.glibcLocalesUtf8}/lib/locale/locale-archive" else ""; 
+
+  shellHook = ''
+    export GRADLE_HOME=${gradle}/lib/gradle
+  '';
 }

@@ -61,9 +61,9 @@ Done, all dependencies will be fetched, built and then cached, as well as your E
 # Want more supported languages?
 Just open an Issue or PR :)
 
-# TODO
+# TODO / good PR
 - Provide a template derivation
-- Improve READme. I know it's quite lame atm
+- Improve READme. I know it's quite lame atm.
 - Lazy evaluation of the languages?
 - An editor with extensions installed?
 
